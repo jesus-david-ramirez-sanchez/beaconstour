@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans|Poppins');
+
+
 .galery{
   height: 100vh;
   background: url(https://images.unsplash.com/photo-1523365237953-9f36b3c8cada?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2f12bd2ec524ffd1682384a884c0aea&auto=format&fit=crop&w=1050&q=80);
   background-size: cover;
+  
 
 
-
-  .brick {
-    width: 33%;
-   }
 }
+
+ngx-masonry {
+  margin-left: 7%;
+  margin-top: 5%;
+}
+
+
+  .masonry-item {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    padding: 5px;
+
+    h5{
+      font-weight: bold;
+      font-size: 25px;
+      padding: 6px;
+    }
+
+    p{
+      font-size: 14px;
+      padding: 6px;
+    }
+
+    h4{
+      font-size: 12px;
+      font-weight: bold;
+      padding: 6px;
+    }
+   }

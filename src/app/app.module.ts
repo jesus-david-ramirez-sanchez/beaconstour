@@ -14,7 +14,8 @@ import { ContactComponent } from './single-page/contact/contact.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { routes } from './app.routes';
 import { environment } from 'src/environments/environment';
-import { MasonryModule } from 'angular2-masonry';
+import { NgxMasonryModule } from 'ngx-masonry';
+
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { MasonryModule } from 'angular2-masonry';
     NgbAlertModule,
     routes,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
-    MasonryModule
+    NgxMasonryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

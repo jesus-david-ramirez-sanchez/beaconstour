@@ -2,7 +2,15 @@
 
 </div>
 
-<masonry>
-        <masonry-brick class="brick" *ngFor="let brick of bricks">
-        {{brick.title}}</masonry-brick>
-     </masonry>
+<ngx-masonry>
+  <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
+      <div class="card shadow" style="width: 18rem;">
+          <img class="card-img-top" src={{item.img}} alt="Card image cap">
+          <div class="card-body">
+            <h5>{{item.name}}</h5>
+            <p class="card-text">{{item.mensaje}}</p>
+            <h4>{{item.gps}}</h4>
+          </div>
+        </div>
+ </ngxMasonryItem>
+</ngx-masonry>

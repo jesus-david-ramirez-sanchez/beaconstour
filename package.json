@@ -27,6 +27,7 @@
     "masonry": "0.0.2",
     "masonry-layout": "^4.2.2",
     "ng2-scroll-to-el": "^1.2.0-alpha.1",
+    "ngx-masonry": "^1.1.2",
     "rxjs": "~6.2.0",
     "zone.js": "~0.8.26"
   },
