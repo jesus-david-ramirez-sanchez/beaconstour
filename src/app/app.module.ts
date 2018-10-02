@@ -11,6 +11,10 @@ import { FinctionsComponent } from './single-page/finctions/finctions.component'
 import { DinamicaComponent } from './single-page/dinamica/dinamica.component';
 import { PremiosComponent } from './single-page/premios/premios.component';
 import { ContactComponent } from './single-page/contact/contact.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { routes } from './app.routes';
+import { environment } from 'src/environments/environment';
+import { MasonryModule } from 'angular2-masonry';
 
 
 @NgModule({
@@ -28,7 +32,10 @@ import { ContactComponent } from './single-page/contact/contact.component';
     BrowserModule,
     NgbModule,
     NgbPaginationModule,
-    NgbAlertModule
+    NgbAlertModule,
+    routes,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    MasonryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
