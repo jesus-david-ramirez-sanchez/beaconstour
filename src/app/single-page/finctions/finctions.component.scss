@@ -1,10 +1,24 @@
-*{
-  margin: 0;
-  padding: 0;
+
+
+.functions{
+  margin: 0 !important;
+  padding: 0 ;
 }
 
+.card{
+  top: 0;
+  margin: 0 !important;
+  padding: 0 ;
+}
+
+.masonry-item{
+  margin-top: 0% !important;
+  max-width: 400px;
+}
+
+
 .card1{
-  height: 600px;
+
   background-size: cover;
   background-image:
     linear-gradient(
@@ -39,7 +53,6 @@
 }
 
 .card2{
-  height: 400px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -74,7 +87,6 @@
 }
 
 .card3{
-  height: 700px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -109,7 +121,6 @@
 }
 
 .card4{
-  height: 300px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -144,7 +155,6 @@
 }
 
 .card5{
-  height: 500px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -180,7 +190,6 @@
 
 
 .card6{
-  height: 500px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -216,7 +225,6 @@
 
 
 .card7{
-  height: 400px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -252,7 +260,6 @@
 
 
 .card8{
-  height: 600px;
   background-size: cover;
   background-image:
     linear-gradient(
@@ -287,35 +294,8 @@
 }
 
 
-.functions{
-  height: 100%;
-}
 
 img {
   max-width: 100%;
   display: block;
-}
-
-.gallery{
-  margin-top: 1rem;
-}
-
-.masonry-layout {
-  --columns: 1;
-  --gap: 1rem;
-  $columns: 6;
-
-  display: grid;
-  grid-template-columns: repeat(var(--columns),1fr);
-  grid-gap: var(--gap);
-
-  .masonry-item{
-    margin-bottom: var(--gap);
-  }
-
-  @for $i from 1 through $columns {
-    &.columns-#{$i}{
-      --columns: #{$i};
-    }
-  }
 }

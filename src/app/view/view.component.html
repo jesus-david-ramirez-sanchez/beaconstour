@@ -1,3 +1,18 @@
-<p>
-  view works!
-</p>
+<div class="container-fluid galery">
+
+</div>
+
+<ngx-masonry>
+  <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
+      <div class="card shadow" style="width: 18rem;">
+          <img class="card-img-top" src={{item.img}} alt="Card image cap">
+          <div class="card-body">
+            <h5>{{item.name}}</h5>
+            <p>{{item.mensaje}}</p>
+              <div class="gps">
+              <i class="fa fa-map-o"></i><h4>{{item.gps}}</h4>
+          </div>
+          </div>
+        </div>
+ </ngxMasonryItem>
+</ngx-masonry>
