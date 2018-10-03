@@ -22,6 +22,7 @@
     "@angular/router": "^6.1.0",
     "@angular/service-worker": "^6.1.9",
     "@ng-bootstrap/ng-bootstrap": "^3.2.2",
+    "angular-masonry": "^0.17.0",
     "angular2-masonry": "^0.4.0",
     "core-js": "^2.5.4",
     "masonry": "0.0.2",

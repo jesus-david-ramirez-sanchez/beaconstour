@@ -3,8 +3,9 @@
 
 .galery{
   height: 100vh;
-  background: url(https://images.unsplash.com/photo-1523365237953-9f36b3c8cada?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f2f12bd2ec524ffd1682384a884c0aea&auto=format&fit=crop&w=1050&q=80);
+  background: url(../../assets/img/imagenfondo.png);
   background-size: cover;
+  background-position: center;
 }
 
 ngx-masonry {
@@ -43,3 +44,15 @@ ngx-masonry {
       }
     }
    }
+
+   @media screen and (max-width: 630px){
+
+
+  .masonry-item {
+    font-family: 'Encode Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+    padding: 5px;
+    margin: 0 auto !important;
+  }
+}

@@ -1,3 +1,12 @@
-<!--https://images.unsplash.com/photo-1534484374439-6b8cd79be97c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a627dedc64d2c2f613a0bf934c815f07&auto=format&fit=crop&w=634&q=80
-https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c88805702ee1d6271b88910c3ccbcf8&auto=format&fit=crop&w=700&q=80
-https://images.unsplash.com/photo-1534193571285-c17c8c22a22c?ixlib=rb-0.3.5&s=babb665b24e35129dd36c80518289672&auto=format&fit=crop&w=658&q=80-->
+<div class="functions">
+  <ngx-masonry class="container-fluid">
+    <ngxMasonryItem class="masonry-item" *ngFor="let item of masonryItems">
+        <div class="card shadow">
+          <div class="{{item.class}}">
+          <h1>{{item.title}}</h1>
+          <p>{{item.content}}</p>
+        </div>
+        </div>
+  </ngxMasonryItem>
+  </ngx-masonry>
+</div>

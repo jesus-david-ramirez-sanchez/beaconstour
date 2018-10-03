@@ -62,7 +62,7 @@
 
 
   .header{
-    position:relative;
+    height: 100%;
     background-image:
       linear-gradient(
         rgba(0, 0, 0, 0.363),
@@ -70,17 +70,19 @@
       ),
       url(../../../assets/img/Medellin.jpg);
     background-size: cover;
-    height: 100vh;
+
     font-family: 'Encode Sans', sans-serif;
     font-family: 'Poppins', sans-serif;
 
-    img{
-      position:absolute;
-      margin-left: 0px;
-      height: 100vh;
-      bottom: 0 !important;
-  }
+    .img{
+        position: relative;
+      img{
+        height: 350px;
+        bottom: 0 !important;
+        margin: 0 auto;
+    }
 
+    }
     .card{
       background: #3390319a;
       border: transparent;
