@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.video{
+  height: 100vh;
+  background-image:
+  linear-gradient(
+    rgba(0, 0, 0, 0.644),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url(https://images.unsplash.com/photo-1536744060972-5266e4c30e99?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7cb7fce72e569bb7f067e38ff054e02b&auto=format&fit=crop&w=750&q=80);
+  background-size: cover;
+  background-position: center;
+
+  .container-fluid{
+    height: 100%;
+    iframe{
+      margin-top: 3%;
+      height: 50%;
+      width: 50%;
+    }
+
+    h1{
+      font-family: 'Poppins', sans-serif;
+      padding-top: 120px;
+      color: white;
+      font-size: 200%;
+    }
+  }
+}
+
+@media screen and (max-width: 630px){
+  .video{
+    background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.644),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../assets/img/santi.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    .container-fluid{
+      height: 100%;
+      iframe{
+        margin-top: 5%;
+        height: 30%;
+        width: 100%;
+      }
+
+      h1{
+        font-family: 'Poppins', sans-serif;
+        padding-top: 180px;
+        color: white;
+        font-size: 200%;
+      }
+    }
+  }
+}

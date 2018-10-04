@@ -3,7 +3,7 @@
 
 .galery{
   height: 100vh;
-  background: url(../../assets/img/imagenfondo.png);
+  background: url(../../assets/img/imagenfondo.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -46,6 +46,14 @@ ngx-masonry {
    }
 
    @media screen and (max-width: 630px){
+
+
+    .galery{
+      width: 100%;
+      background: url(../../assets/img/santi.png);
+      background-position: center;
+      background-size: cover;
+    }
 
 
   .masonry-item {

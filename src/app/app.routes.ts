@@ -4,11 +4,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SinglePageComponent } from './single-page/single-page.component';
 import { ViewComponent } from './view/view.component';
+import { VideoComponent } from './video/video.component';
 
 
 
 export const router: Routes = [
-    { path: '', redirectTo: 'view', pathMatch: 'full' },
+    { path: '', redirectTo: 'video', pathMatch: 'full' },
+    { path: 'video', component: VideoComponent },
     { path: 'view', component: ViewComponent},
     { path: 'single', component: SinglePageComponent}
 ];

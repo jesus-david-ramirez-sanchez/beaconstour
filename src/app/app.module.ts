@@ -15,6 +15,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { routes } from './app.routes';
 import { environment } from 'src/environments/environment';
 import { NgxMasonryModule } from 'ngx-masonry';
+import { VideoComponent } from './video/video.component';
 
 
 
@@ -28,7 +29,8 @@ import { NgxMasonryModule } from 'ngx-masonry';
     FinctionsComponent,
     DinamicaComponent,
     PremiosComponent,
-    ContactComponent
+    ContactComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
