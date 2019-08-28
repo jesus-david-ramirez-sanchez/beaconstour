@@ -9,10 +9,10 @@ import { VideoComponent } from './video/video.component';
 
 
 export const router: Routes = [
-    { path: '', redirectTo: 'video', pathMatch: 'full' },
+    { path: '', redirectTo: 'single', pathMatch: 'full' },
     { path: 'video', component: VideoComponent },
     { path: 'view', component: ViewComponent},
     { path: 'single', component: SinglePageComponent}
 ];
 
-export const routes: ModuleWithProviders = RouterModule.forRoot(router);
+export const routes: ModuleWithProviders = RouterModule.forRoot(router, { useHash: true });
